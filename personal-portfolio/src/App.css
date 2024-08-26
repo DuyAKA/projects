@@ -1,0 +1,539 @@
+.App {
+  color: rgb(234, 226, 226);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.portfolio-text {
+  padding-left: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 90px; 
+  padding-right: 70px;
+}
+
+.social-media-icons a {
+  color: white;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: rgb(147, 120, 32); 
+}
+
+.intro {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.intro-left{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding-left: 110px;
+  padding-top: 60px;
+}
+
+.frontend-dev-text {
+  color: coral;
+  font-family: cursive;
+  margin-top: 10px;
+}
+
+.intro-left-title{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 30px;
+  color: rgb(238, 221, 221);
+}
+
+.intro-left-button{
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.intro-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro-right img{
+  width: 85%;
+}
+
+.mainskills-text{
+  text-align: center;
+  margin: 30px auto;
+  position: relative;
+  width: 90%;
+  font-family: "Kode Mono", monospace;
+  color:rgb(105, 211, 211);
+  border: 3px solid rgb(159, 84, 84); 
+}
+
+.mainskills-text:before{
+  background-color: coral;
+  display: block;
+  width: 35%;
+  height: 8px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
+
+.mainskills-text:after{
+  background-color: coral;
+  display: block;
+  width: 35%;
+  height: 7px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: 1;
+}
+
+.projects-text{
+  text-align: center;
+  margin: 70px auto;
+  position: relative;
+  width: 90%;
+  font-family: "Kode Mono", monospace;
+  color:rgb(105, 211, 211);
+  border: 3px solid rgb(159, 84, 84); 
+  margin-top: 100px;
+}
+
+.projects-text:before{
+  background-color: coral;
+  display: block;
+  width: 38%;
+  height: 8px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+  z-index: 1;
+}
+
+.projects-text:after{
+  background-color: coral;
+  display: block;
+  width: 38%;
+  height: 7px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: 1;
+}
+
+.interests-text{
+  text-align: center;
+  margin: 70px auto;
+  position: relative;
+  width: 90%;
+  font-family: "Kode Mono", monospace;
+  color:rgb(105, 211, 211);
+  border: 3px solid rgb(159, 84, 84); 
+  margin-top: 100px;
+}
+
+.interests-text:before{
+  background-color: coral;
+  display: block;
+  width: 38%;
+  height: 8px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45%;
+  z-index: 1;
+}
+
+.interests-text:after{
+  background-color: coral;
+  display: block;
+  width: 38%;
+  height: 7px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: 1;
+}
+
+.skills-block{
+  padding-top: 40px;
+  align-items: center;
+}
+
+.html-skill,
+.css-skill,
+.javascript-skill,
+.reactjs-skill,
+.redux-saga-skill,
+.wixstudio-skill,
+.bootstrap-skill,
+.english-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: transform 0.4s ease-out;
+  cursor: pointer;
+}
+
+.html-skill {
+  background: linear-gradient(to right, #dd4f0c, rgb(148, 81, 18));
+}
+
+.css-skill {
+  background: linear-gradient(to right, red, rgb(177, 32, 32));
+}
+
+.javascript-skill {
+  background: linear-gradient(to right, yellow, rgb(168, 168, 12));
+}
+
+.reactjs-skill {
+  background: linear-gradient(to right, rgb(3, 129, 248), rgb(41, 128, 210));
+}
+
+.redux-saga-skill {
+  background: linear-gradient(to right, green, rgb(47, 152, 47));
+}
+
+.wixstudio-skill {
+  background: linear-gradient(to right, grey, rgb(203, 180, 180));
+}
+
+.bootstrap-skill {
+  background: linear-gradient(to right, rgb(20, 76, 229), rgb(40, 59, 187));
+}
+
+.english-skill {
+  background: linear-gradient(to right, rgb(235, 64, 235), violet);
+}
+
+.html-logo, .css-logo, .javascript-logo, .reactjs-logo, .redux-saga-logo, .wixstudio-logo, .bootstrap-logo, .english-logo {
+  max-width: 15%;
+  height: auto;
+}
+
+.redux-saga-logo {
+  width: 20%;
+}
+
+.html-title, .css-title, .javascript-title, .reactjs-title, .redux-saga-title, .wixstudio-title, .bootstrap-title, .english-title {
+  font-size: xx-large;
+  font-family: "Underdog", system-ui;
+  font-weight: bold;
+  width: 70%;
+  color: black;
+  text-align: center;
+}
+
+.years-worked{
+  font-family: "Playwrite PE", cursive;
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(39, 20, 20);
+}
+
+.html-skill:hover,
+.css-skill:hover,
+.javascript-skill:hover,
+.reactjs-skill:hover,
+.redux-saga-skill:hover,
+.wixstudio-skill:hover,
+.bootstrap-skill:hover,
+.english-skill:hover {
+  transform: scale(1.1); 
+  opacity: 0.9;
+}
+
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.timeline::after{
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: whitesmoke;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  animation: moveline 5.7s linear forwards;
+}
+
+@keyframes moveline{
+  0%{
+    height: 0;
+  }
+
+  100%{
+    height: 100%;
+  }
+}
+
+.timeline-container{
+  padding: 10px 50px;
+  position:relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown{
+  0%{
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.timeline-container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.timeline-container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.timeline-container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.timeline-container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.timeline-container:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.timeline-container:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.timeline-textbox{
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  background: rgb(62, 24, 24);
+  color: rgb(239, 235, 235);
+}
+
+.timeline-textbox h2{
+  font-weight: 600;
+}
+
+.timeline-textbox small{
+  display: inline-block;
+  margin-bottom: 15px;
+  color: yellow
+}
+
+.timeline-textbox p{
+  color: rgb(179, 169, 217);
+}
+
+.left-container{
+  left: 0;
+}
+
+.right-container{
+  left: 50%;
+}
+
+.left-container-arrow{
+  height:0;
+  width: 0;
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 45px solid rgb(62, 24, 24);
+  right: -45px;
+}
+
+.right-container-arrow{
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-right: 45px solid rgb(62, 24, 24);
+  left: -42px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline{
+    margin: 50px auto;
+  }
+
+  .timeline::after{
+    left: 30px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .timeline-textbox{
+    font-size: 13px;
+  }
+
+  .timeline-textbox small{
+    margin-bottom: 10px;
+  }
+
+  .right-container{
+    left: 0;
+  }
+
+  .left-container-arrow, .right-container-arrow{
+    border-right: 45px solid rgb(62, 24, 24);
+    border-left: 0px;
+    left: -45px;
+  }
+}
+
+@keyframes leftSide{
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.left-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  animation: leftSide 1s forwards;
+  margin-bottom: 55px;
+}
+
+.carousel-item img{
+  height: 500px; 
+  object-fit: cover; 
+  max-width: 100%;
+  justify-content: center;
+}
+
+.images-title{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: meidum;
+  background: linear-gradient(to right, rgb(220, 203, 203), rgb(233, 120, 120));
+  background-clip: text;
+  color: transparent;
+}
+
+.images-title1{
+  display: flex;
+  justify-content: center;
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: meidum;
+  background: linear-gradient(to right, rgb(220, 203, 203), rgb(229, 250, 42));
+  background-clip: text;
+  color: transparent;
+}
+
+.images-title2{
+  display: flex;
+  justify-content: center;
+  font-family: "Playwrite AU QLD", cursive;
+  font-size: meidum;
+  background: linear-gradient(to right, rgb(220, 203, 203), rgb(156, 223, 250));
+  background-clip: text;
+  color: transparent;
+}
+
+
+.first-letter-paragraph{
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1; /* delete the gap between 1st line and 2nd line */
+  color: rgb(222, 168, 168)
+}
+
+.remaining-paragraph{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(219, 196, 196);
+  font-size: large;
+}
+
+.first-letter-paragraph1{
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1; /* delete the gap between 1st line and 2nd line */
+  color: rgb(227, 231, 103)
+}
+
+.remaining-paragraph1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(235, 240, 207);
+  font-size: large;
+}
+
+.first-letter-paragraph2{
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1; /* delete the gap between 1st line and 2nd line */
+  color: rgb(124, 231, 253);
+} 
+
+.remaining-paragraph2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(181, 205, 204);
+  font-size: large;
+}
+
+.right-text-interests{
+  animation: leftSide 1.1s forwards;
+}
+
+.right-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}

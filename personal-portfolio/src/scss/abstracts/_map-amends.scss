@@ -1,0 +1,5 @@
+$custom-color: (
+    "orange": $custom-color
+);
+
+$theme-colors: map-merge($theme-colors, $custom-color);
